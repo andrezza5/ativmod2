@@ -1,0 +1,26 @@
+algoritmo "notaAlunos"
+
+VAR
+
+real : nota1, nota2, media, faltas
+caracter : nomealuno, aprovado, reprovado
+
+inicio
+
+escreva ("digite nota1")
+leia (nota1)
+escreva ("digite nota2")
+leia (nota2)
+
+media <- (nota1 + nota2/2)
+
+	se media >= 7.0 entao
+escreva ("nomealuno , aprovado")
+	se media < 7.0 entao
+escreva ("nomealuno , reprovado")
+	se faltas >= 3 entao
+escreva ("nomealuno , reprovado")
+
+fimse
+
+
